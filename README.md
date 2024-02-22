@@ -30,4 +30,4 @@ Contributions are welcome! Feel free to fork the repository, submit issues, or c
 This project is licensed under the [MIT License](LICENSE.md).
 
 🌐 **Connect with Me:**
-Let's discuss ideas and improvements! Reach out to me on [Twitter](https://twitter.com/your_username) or [LinkedIn](https://linkedin.com/in/jesusrodriguezluna/).
+Let's discuss ideas and improvements! Reach out to me on [LinkedIn](https://linkedin.com/in/jesusrodriguezluna/).
