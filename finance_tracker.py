@@ -1,7 +1,7 @@
 from pathlib import Path
 import json
 
-def validPassword(users_info, user):
+def valid_password(users_info, user):
     print(f'Welcome back {user}!')
     password = input('Please enter your password: ')
     if password == users_info[user]:
@@ -10,8 +10,8 @@ def validPassword(users_info, user):
         print('Incorrect: Password Does not match.')
 
 def register_new_user(users_info, user, path):
-    new_user = input('No user found. Would you like to register? (y/n) ').lower()
-    if new_user == 'y':
+    user_choice = input('No user found. Would you like to register? (y/n) ').lower()
+    if user_choice == 'y':
         password = input('Please register a password: ')
         users_info[user] = password
         contents = json.dumps(users_info)
@@ -19,28 +19,27 @@ def register_new_user(users_info, user, path):
         print(f'Username {user} has successfully been created!')
     else:
         print('Goodbye.')
+    return users_info
         
-def data_exitst(path):
+def load_user_data(path):
     if path.exists():
         return json.loads(path.read_text())
-        
+    return {}
 
 def greet_user():
     '''Greet the user by name.'''
-    # empty dictionary
-    users_info = {}
     
     path = Path('users.json')
-    users_info = data_exitst(path)
+    users_info = load_user_data(path)
     
     # Intro
     print('Personal Fianance Tracker')
     
     user = input('Please enter your username: ')
     if user in users_info:
-        validPassword(users_info, user)
+        valid_password(users_info, user)
     else:
-        register_new_user(users_info, user, path)
+        users_info = register_new_user(users_info, user, path)
     
         
 if __name__ == "__main__":
