@@ -17,7 +17,7 @@ This Python-based command-line application empowers users to take control of the
 
 🔧 **How to Use:**
 1. Clone the repository: `git clone https://github.com/your-username/personal-finance-tracker.git`
-2. Install dependencies (if any): `pip install -r requirements.txt`
+2. Install dependencies (if any):
 3. Run the application: `python finance_tracker.py`
 
 📚 **Documentation:**
@@ -30,4 +30,4 @@ Contributions are welcome! Feel free to fork the repository, submit issues, or c
 This project is licensed under the [MIT License](LICENSE.md).
 
 🌐 **Connect with Me:**
-Let's discuss ideas and improvements! Reach out to me on [Twitter](https://twitter.com/your_username) or [LinkedIn](https://linkedin.com/in/jesusrodriguezluna/).
+Let's discuss ideas and improvements! Reach out to me on [LinkedIn](https://linkedin.com/in/jesusrodriguezluna/).
