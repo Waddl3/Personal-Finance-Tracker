@@ -1,6 +1,6 @@
 from pathlib import Path
 import json
-from finance_tracker import greet_user  # Replace 'your_main_module' with the actual module name
+from finance_tracker import greet_user 
 
 def test_new_user_registration(tmp_path, monkeypatch, capsys):
     # Set up a temporary users.json file
